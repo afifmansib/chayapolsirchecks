@@ -1,0 +1,72 @@
+/*** section2 ****/
+.section2 {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.section2-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: #EFEFEF;
+    border-radius: 5px;
+}
+
+.section2-info {
+    background-color: #fff;
+    padding: 35px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 20px;
+}
+
+.section2-info h3 {
+    color: #F06425;
+    font-family: var(--open-sans);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 20px;
+    margin: 0px;
+}
+
+.section2-info p {
+    font-size: 18px;
+    line-height: 20px;
+    color: rgb(85, 85, 85);
+    font-weight: 400;
+    margin: 0px;
+    font-family: var(--open-sans);
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 3px !important;
+}
+
+.section2-info p:last-child {
+    margin: 0px !important;
+}
+
+@media(max-width:1000px) {
+    .section2-main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+}
+
+@media(max-width:530px) {
+    .section2-main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section2-info h3 {
+        font-size: 40px;
+    }
+}

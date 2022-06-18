@@ -1,0 +1,73 @@
+/**** res-car-category ***/
+.res-car-category {
+    background: rgb(239, 239, 239);
+    padding: 50px 5%;
+    box-sizing: border-box;
+    display: none;
+    margin-bottom: 40px;
+}
+
+.res-category-main {
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.car-category {
+    width: 100%;
+    background-color: rgb(214, 73, 122);
+    border-radius: 10px;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    text-align: center;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.car-category img {
+    display: block;
+    max-width: 140px;
+    width: 100%;
+    margin: 0px auto 10px auto;
+    box-sizing: border-box;
+}
+
+.car-category h3 {
+    color: #fff;
+    font-family: var(--open-sans);
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    line-height: 28px;
+    margin: 0px;
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    text-align: center;
+
+}
+
+@media(max-width:600px) {
+    .res-category-main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .res-car-category {
+        padding: 40px 10px;
+    }
+}
+
+@media(max-width:990px) {
+    .res-car-category {
+        display: block;
+    }
+}

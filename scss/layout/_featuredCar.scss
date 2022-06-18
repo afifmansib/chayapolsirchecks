@@ -1,0 +1,50 @@
+/**** section 6 ****/
+
+.section6 {
+    display: block;
+    width: 100%;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.section6-main {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.section6:nth-child(odd) {
+    display: block;
+    padding: 40px 0px;
+    box-sizing: border-box;
+    background-color: #EFEFEF;
+    margin-bottom: 40px;
+    filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.16));
+}
+
+.section6-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+
+@media(max-width:1100px) {
+    .section6-main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width:860px) {
+    .section6-main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+}
+
+@media(max-width:530px) {
+    .section6-main {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+}

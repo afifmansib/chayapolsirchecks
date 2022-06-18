@@ -1,0 +1,132 @@
+/**** section3****/
+.section3 {
+    display: block;
+    background-color: #EFEFEF;
+    padding: 40px 0px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.section3-main {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-gap: 15px 12px;
+}
+
+.section3-slide {
+    width: 100%;
+    display: none;
+}
+
+@media(max-width:1150px) {
+    .section3-main {
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
+
+@media(max-width:1030px) {
+    .section3-main {
+        grid-template-columns: repeat(7, 1fr);
+    }
+}
+
+@media(max-width:850px) {
+    .section3-main {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .section3-slide {
+        display: block;
+    }
+}
+
+@media(max-width:740px) {
+    .section3-main {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .section3-slide {
+        display: block;
+    }
+}
+
+@media(max-width:640px) {
+    .section3-main {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .section3-slide {
+        display: block;
+    }
+}
+
+@media(max-width:500px) {
+    .section3-main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .section3-slide {
+        display: block;
+    }
+}
+
+@media(max-width:400px) {
+    .section3-main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section3-slide {
+        display: block;
+    }
+
+    .category-info {
+        max-width: 100% !important;
+    }
+}
+
+.category-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    height: 130px;
+    max-width: 140px;
+    width: 100%;
+    margin: auto;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+}
+
+.category-info:hover {
+    background-color: #F9DBC6;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 16%);
+}
+
+.category-info a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.category-info img {
+    width: 60px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.category-info h3 {
+    color: #555555;
+    font-family: var(--open-sans);
+    font-style: normal;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0px;
+}
